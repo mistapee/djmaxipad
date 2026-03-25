@@ -22,6 +22,8 @@ The ones that inspire these projects are the same ones that will somehow need to
 
 ![maxipadbootsel](https://github.com/user-attachments/assets/c5ef96f5-a43e-485c-8e81-a9fec48b592f)
 
+^lol just noticed i crapped up that pic. paaahahah.
+
 The end result is always worth learning around the quirks. I would say to just use the backup config file to restore from - turns out i don't have one despite thinking i defintely did it.... both browsers are telling me I 'cancelled' it. ffs. I'll upload one soon.
 
 ![gpioshiz](https://github.com/user-attachments/assets/81d47fb3-39fb-4930-a2ef-836c295684d0)
