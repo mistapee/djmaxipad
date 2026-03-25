@@ -1,4 +1,4 @@
-# djmaxipad - just quickly slappin' this up yer
+# djmaxipad - quick info for recent buyers - PCB/parts ordering info after.
 16 key controller for newer DJ max built on rp2040 and mx keys
 ![s-l1600 (1)](https://github.com/user-attachments/assets/1d5bf043-02d6-4082-ba79-dabb3c4ed922)
 
@@ -29,6 +29,24 @@ The end result is always worth learning around the quirks. I would say to just u
 ![gpioshiz](https://github.com/user-attachments/assets/81d47fb3-39fb-4930-a2ef-836c295684d0)
 
 Be aware though - the hotkeys to get to webcofig are only where it's stated in the first picture AFTER we have set it to be that. If you have to save and reboot, choose to reboot back in to webconfig until you are sure you can get back in using key presses you have set - otherwise you will be flashing the 'force webconfig' again.
+
+_______________________________
+
+Ordering from the Gerbers
+
+The USB notch cut out was done last minute as the usual micro-usb Pico's are already quite tight to fit between 2 PCB's and I knew my next batch of them were going to have USB-C which is thicker, bit of a rush job but it'll do. The design was done on the spot out of fill and prohibited regions to give me a design with copper layers etc to block lights and the negative areas to allow light - i'm sure some sarcy get might say like 'yeah, looks like your usual effort there MistaPee' but shuddup, I sent them off rather confident and what I got back worked really well. 
+
+I've used 4 different fabs so far this year and yet again JLC have been absolutely awesome. and they say nothing and cause no fuss, just business day in day out. Not only are their prices ridiculously good but other fabs would somehow leave off a screenprint entirely (on a large order i paid full whack for too wtf) or get really confused over the mirroring and layering either side of a plate for lighting effects.
+
+So go to JLC. Do the online quote, upload Gerbers as supplied  - I chose the black PCB for the top, they don't charge any more for different colours anyway. This means that the screen print later will be done in white. all settings leave to defaults. On small enough orders you can use the cheap chinese shipping that isn't actually all that slow.
+
+Once your order is in get on AliExpress - you need per board: 16 MX switches- linear switches not clicky, as there are no key LEDs there are some very cheap options for perfectly serviceable switches, 4 5050 sized RGBs, one 220o resister (6030smd, buy a reel) and a full size pico. Key caps can be whatever you want but I actually loathe trying to get sensible matching sets. NO HOTSWAP SOCKETS. I swear I'll disown you grumble grumble old man stuff. Anyway this will arrive about the same time as your PCBs.
+
+For SMD stuff I tend to use a solder paste, a slight bit of pressure on the syringe gives enough to dab bits on the PCB and put the parts on, approaching it with heat you can see it spread and get to where you need it, I then always go around after with some proper leaded solder after and bulk it up, probably not needed but it is nice to be sure - the vast majority of our projects have travelled to the other side of the world and beyond, and getting great feedback.
+
+The assembly is quite obvious, but flash it before soldering any keys in - the LEDs will light up, not in an animation you want, but you will see if there is a problem to sort out as once you solder the keys in the top and bottom layers are stuck
+
+
 
 _________________
 I wanted to get back in to DJ max but the latest version is way more involved than the Trilogy style, very common handful of keys that can be found in loads of BMS type games.
