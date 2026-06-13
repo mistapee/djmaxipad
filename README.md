@@ -1,10 +1,14 @@
-# djmaxipad - quick info for recent buyers - PCB/parts ordering info after.
+# djmaxipad - DJ MAX & other intense rhythm game controller for planting your hands and minimal faffing about.
+
+June 2026: The new version out and about has been produced on purple PCBs, and the cut out notch on the top has changed to expose the Bootsel button. I supply them flashed with the config detailed below - BUT - this is one of a few controllers where the GP2040-CE backup/restore system does not work, it will transfer the RGB LED info fine and nothing else and it takes a moment to set it as a keyboard input. The info I have included on that here is useful if you decide to reflash, or if for some reason some of the choices I have made won't work for your situation.
+Despite the previous black version being labelled a prototype the PCB for the purple version has barely changed, there are now mounting holes, as the PCBs suffer from bending partly as a design problem and partly productions. The mount holes allow use to fit the controller in to a case of some sort to hold the device flat. Considering it needs some form of case anywauy this is a fine solution for now, and each new order I can place is a new chance to solve the issue from the production side. The case itself is challenging me currently and I have mutlple rooms littered with resin casts and 3D prints trying to solve this in a way I am happy to stand by long-term
+
+[b]USER GUIDE[/b]
+
 16 key controller for newer DJ max built on rp2040 and mx keys
 ![s-l1600 (1)](https://github.com/user-attachments/assets/1d5bf043-02d6-4082-ba79-dabb3c4ed922)
 
-Just a day or so after I explained a little on how this came about a bunch of them have been made up, boxed and are shipping out so my waffle is bumped off for some instructions for their new owners. Basics first - but I know what some of you are like so further on will be the details you need to reflash n that
-
-First things first, it will not show as a gamepad, it will show as a keyboard - the keys I chose didnt matter all that much (it could have been just numbers in a row or whatever) but I wanted it to somewhat represent something recognisable, especially if you end up having to set it up from scratch. If you load your game and just map your keys that might be about it for you. In this picture I've added the GP2040-CE terms for a few of the buttons. Pressing S2 and L1 together will change the LED animation type to the next one. There's not many to choose from, that's something for later. For the webconfig you need S2+B3+B4...
+First things first, it will not show as a gamepad, it will show as a keyboard - the keys I chose didn't matter all that much (it could have been just numbers in a row or whatever) but I wanted it to somewhat represent something recognisable, especially if you end up having to set it up from scratch. If you load your game and just map your keys that might be about it for you. In this picture I've added the GP2040-CE terms for a few of the buttons. Pressing S2 and L1 together will change the LED animation type to the next one. There's not many to choose from, that's something for later. For the webconfig you need S2+B3+B4...
 
 ![maximappings](https://github.com/user-attachments/assets/2915a76b-2e9d-49a5-805c-a8d70d4fb013)
 
@@ -13,24 +17,15 @@ Holding those 3 keys for 5 seconds will reboot the pad in to webconfig mode, alt
 The other most obvious adaptation would be to physically rearrange keycaps - 1.25u caps horizontally or vertically in some positions makes up for changes in hand size. Everyone involved some far is aware that I can't be sure until the PCB's arrive from china, and even then it's quite subjective.
 
 done. enjoy.
-
-
-BuT MisTaPeEeeE I WasSs NoWheRRee NeeaaRr iTtt Aanndd....
-The ones that inspire these projects are the same ones that will somehow need to relash theirs - problem is, even once reflashed the GPIO specified by GP2040-CE for the S2+B3+B4 webconfig reboot combo are the only pins I did not use (not even on purpose) and I made the bootsel button awkward to press - thankfully the GP2040-CE release page also has a 'force webconfig' .uf2 file - you must first flash the normal gp2040-ce .uf2, then do it again with the small 'force webconfig'
-
-
-
-![maxipadbootsel](https://github.com/user-attachments/assets/c5ef96f5-a43e-485c-8e81-a9fec48b592f)
-
-^lol just noticed i crapped up that pic. paaahahah.
-
-The end result is always worth learning around the quirks. I would say to just use the backup config file to restore from - turns out i don't have one despite thinking i defintely did it.... both browsers are telling me I 'cancelled' it. ffs. I'll upload one soon.
+.
 
 ![gpioshiz](https://github.com/user-attachments/assets/81d47fb3-39fb-4930-a2ef-836c295684d0)
 
 Be aware though - the hotkeys to get to webcofig are only where it's stated in the first picture AFTER we have set it to be that. If you have to save and reboot, choose to reboot back in to webconfig until you are sure you can get back in using key presses you have set - otherwise you will be flashing the 'force webconfig' again.
 
 _______________________________
+
+
 
 Ordering from the Gerbers
 
@@ -46,20 +41,6 @@ For SMD stuff I tend to use a solder paste, a slight bit of pressure on the syri
 
 The assembly is quite obvious, but flash it before soldering any keys in - the LEDs will light up, not in an animation you want, but you will see if there is a problem to sort out as once you solder the keys in the top and bottom layers are stuck
 
-
-
-_________________
-I wanted to get back in to DJ max but the latest version is way more involved than the Trilogy style, very common handful of keys that can be found in loads of BMS type games.
-I would get lost on a keyboard and being able to lay my hands out properly would give me a good chance to enjoy the game and not get in a mood and start throwing things...
-
-I bought the MOQ of 5 from JLC, the layout is planned around my hands and what I want. Maybe I am wrong (hah yeah unlikely right?) and I do think that some small adjustments (vertical 1.5u placed on furthest keys for instance) could help people with smaller hands or whatever Trevor.
-
-Gerbers are there, help yourself I care less about credit than feedback - information to work towards a final, done-and-dusted, controller is valuable.
-
-Used a full fat Pico, but I took a notch out above the USB port as my next batch of Pico's coming are USB-C, which wouldn't fit between the PCB and the top plate. 
-NOT hotswappable... the usefulness of that is questionable anyway but it's just a few clicks to change that yourself if you want that
-Not enough GPIO left for me to care to have per-key LED, so didn't.
-4 tactile switch (4.5x4.5x 6-9mm tall work fine)
 
 Does have RGB with 4x 5050
 
