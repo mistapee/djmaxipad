@@ -1,5 +1,11 @@
 # djmaxipad - DJ MAX & other intense rhythm game controller for planting your hands and minimal faffing about.
 
+July 2026: quick update [3d files added to each repo, as that's where updates are happening] - likely to say with the cutout on the top PCB plate, using an insert on top of the cut out, then I can continue ordering PCBs without worrying about the random stocks of Pico's I get sent. Also, where cases originally would house the nut, with a screw going through the controller in to the case, that's been scrapped off for a sit-in style like all the others. I'm always open to ideas but rarely get any so these bits of inspiration just strike me in no sensible or organised fashion
+
+<img width="30%" height="30%" alt="djmaxipad" src="https://github.com/user-attachments/assets/53c36e60-8b81-43f1-bb0a-6879b8fb4646" />
+
+
+
 June 2026: The new version out and about has been produced on purple PCBs, and the cut out notch on the top has changed to expose the Bootsel button. I supply them flashed with the config detailed below - BUT - this is one of a few controllers where the GP2040-CE backup/restore system does not work, it will transfer the RGB LED info fine and nothing else and it takes a moment to set it as a keyboard input. The info I have included on that here is useful if you decide to reflash, or if for some reason some of the choices I have made won't work for your situation.
 Despite the previous black version being labelled a prototype the PCB for the purple version has barely changed, there are now mounting holes, as the PCBs suffer from bending partly as a design problem and partly productions. The mount holes allow use to fit the controller in to a case of some sort to hold the device flat. Considering it needs some form of case anywauy this is a fine solution for now, and each new order I can place is a new chance to solve the issue from the production side. The case itself is challenging me currently and I have mutlple rooms littered with resin casts and 3D prints trying to solve this in a way I am happy to stand by long-term
 
